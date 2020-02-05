@@ -1,0 +1,85 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --firstColor: white;
+        --secondColor: darkgrey;
+        --Orange: orange;
+    }
+    
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template: 100px 50px 1fr 50px 50px/1fr;
+    }
+    
+    .header {
+        background: red;
+        color: var(--firstColor);
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.2rem;
+    }
+    
+    .nav-bar {
+        background-color: var(--secondColor);
+        color: var(--Orange);
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
+        align-items: center;
+        margin-top: 1rem;
+        text-transform: capitalize;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+    .content {
+        background-color: var(--firstColor);
+        color: var(--secondColor);
+        line-height: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    
+    .text {
+        text-indent: 2rem;
+        margin: 1rem;
+    }
+    
+    .social-icons {
+        background-color: var(--secondColor);
+        color: var(--Orange);
+    }
+    
+    .social-icons ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .social-icons ul li a {
+        text-decoration: none;
+        font-size: 2rem
+    }
+    
+    footer {
+        background-color: black;
+        color: var(--firstColor);
+        text-align: center;
+        padding: 10px;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+    }
