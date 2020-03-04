@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var scorex = (120 + 90 + 110) / 3;
+    var scorey = (140 + 89 + 97) / 3;
+    console.log(scorex, scorey);
+
+    /* form validation */
+    function formvalidation() {
+        var name = document.myform.name.value;
+        var password = document.myform.password1.value;
+        var firstpassword = document.myform.password1.value;
+        var secondpassword = document.myform.password2.value;
+
+        if (name == null || name == "") {
+            alert("Name can't be blank");
+            return false;
+        } else if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+
+        if (firstpassword == secondpassword) {
+            return true;
+        } else {
+            alert("password must be same!");
+            return false;
+        }
+    }
+    //array
+
+    let array = ["name1", "name2", "name3"];
+
+    for (let i of array) {
+        console.log(i);
+    }
+
+    //map
+
+    var a = new Map();
+    a.set(1, "black");
+    a.set(2, "red");
+
+    for (var x of a) {
+        console.log(x);
+    }
+    //creating objects
+    var person = {
+        name: "raji",
+        age: 24,
+        gender: "female",
+        display: function() {
+            alert(this.name);
+        }
+    };
+
+    console.log(person);
+
+    //date
+    var date = new Date();
+
+    console.log(date);
+
+    //hoisted
+    myfun();
+
+    function myfun() {
+        document.write("Hello, Welcome..!");
+    }
+</script>
+
+<body>
+
+    <body>
+        <form name="myform" method="post" onsubmit="return formvalidation()">
+            <label for="Name">Name: </label>
+            <input type="text" name="name">
+            <br>
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" name="password1">
+            <br>
+            <br>
+            <label for="password">Confirm Password: </label>
+            <input type="password" name="password2">
+            <br>
+            <br>
+            <input type="submit" value="register">
+        </form>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla delectus at labore minus! Nisi odio eius, debitis porro minus optio.</p>
+    </body>
+
+</html>
