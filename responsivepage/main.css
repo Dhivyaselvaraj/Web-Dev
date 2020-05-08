@@ -1,0 +1,55 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: royalblue;
+        color: white;
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 20px;
+    }
+    
+    .cont {
+        width: 600px;
+        height: 400px;
+        margin: auto;
+        background-color: coral;
+    }
+    
+    .fill {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        font-size: 16px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cont {
+            background-color: lightblue;
+            width: 75%;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .cont {
+            background-color: palevioletred;
+            width: 55%;
+        }
+    }
